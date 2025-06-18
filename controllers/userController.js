@@ -1,8 +1,8 @@
 const User = require("../models/User");
 
 const createUser = async (req, res) => {
-  console.log("📦 File received:", req.file); // Debug log
-  console.log("📝 Body received:", req.body); // Optional: Debug input
+  console.log("File received:", req.file);
+  console.log("Body received:", req.body);
 
   const { name, email, username } = req.body;
   const photo = req.file?.filename;
